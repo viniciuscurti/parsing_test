@@ -1,6 +1,8 @@
-<h2> Novas Analises de transações </h2>
+<div class='container mt-5'>
+  <h2> Novas Analises de transações </h2>
 
-<%= simple_form_for(@transaction) do |f| %>
-  <%= f.input :cnab_file, label: "Faça o upload do seu arquivo .txt", as: :file %>
-  <%= f.button :submit, "Criar", class:'btn btn-success' %>
-<% end %>
+  <%= simple_form_for(@transaction) do |f| %>
+    <%= f.input :cnab_file, label: "Faça o upload do seu arquivo .txt", as: :file %>
+    <%= f.button :submit, "Criar", class:'btn btn-success' %>
+  <% end %>
+</div>
